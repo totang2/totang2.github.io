@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安卓版本上架指南 - 翻天印有声书</title>
+    <meta name="description" content="翻天印有声书应用安卓版上架到Google Play商店的详细步骤和注意事项">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>翻天印有声书</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="guide.html">使用指南</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content-section">
+            <h1>翻天印应用安卓版上架指南</h1>
+            <p>本文档提供了将翻天印有声书应用上架到Google Play商店的详细步骤和注意事项。</p>
+
+            <h2>准备工作</h2>
+
+            <h3>1. 开发者账号注册</h3>
+            <ol>
+                <li>访问 <a href="https://play.google.com/console/signup" target="_blank">Google Play Console</a></li>
+                <li>使用公司的Google账号登录</li>
+                <li>接受开发者协议</li>
+                <li>支付25美元的一次性注册费</li>
+                <li>完成账号验证流程</li>
+                <li>填写开发者资料，包括公司名称、地址、联系方式等</li>
+            </ol>
+
+            <h3>2. 应用准备</h3>
+            <p>确保您的应用符合Google Play的政策和技术要求：</p>
+            <ol>
+                <li>应用已完成全面测试，无明显bug</li>
+                <li>应用图标符合<a href="https://developer.android.com/google-play/resources/icon-design-specifications" target="_blank">Google Play图标要求</a></li>
+                <li>准备应用截图（手机、7英寸平板、10英寸平板各至少一张）</li>
+                <li>准备应用简介和详细描述</li>
+                <li>确定应用分类和内容分级</li>
+                <li>准备隐私政策URL（使用我们已创建的GitHub Pages隐私政策页面）</li>
+            </ol>
+
+            <h3>3. 构建发布版APK或App Bundle</h3>
+            <ol>
+                <li>在Android Studio中，选择<code>Build > Generate Signed Bundle / APK</code></li>
+                <li>选择<code>Android App Bundle</code>或<code>APK</code>（推荐使用App Bundle）</li>
+                <li>创建或选择现有的密钥库文件
+                    <ul>
+                        <li>密钥库文件必须安全保存，丢失将导致无法更新应用</li>
+                        <li>记录密钥库密码和密钥别名</li>
+                    </ul>
+                </li>
+                <li>选择<code>release</code>构建变体</li>
+                <li>完成构建过程</li>
+            </ol>
+
+            <h2>上架流程</h2>
+
+            <h3>1. 创建应用</h3>
+            <ol>
+                <li>登录<a href="https://play.google.com/console" target="_blank">Google Play Console</a></li>
+                <li>点击<code>创建应用</code></li>
+                <li>选择默认语言（简体中文）</li>
+                <li>输入应用名称（翻天印有声书）</li>
+                <li>指定应用类型（应用）</li>
+                <li>确认是否免费或付费</li>
+                <li>声明应用是否符合Play应用政策</li>
+            </ol>
+
+            <h3>2. 设置商品详情</h3>
+            <p>在左侧菜单中找到<code>商品详情</code>，填写以下信息：</p>
+            <ol>
+                <li>应用简介（最多80个字符）</li>
+                <li>详细描述（最多4000个字符）</li>
+                <li>上传应用图标（512x512像素，PNG格式）</li>
+                <li>上传特色图片（1024x500像素）</li>
+                <li>上传应用截图（至少8张）</li>
+                <li>选择应用类型和分类（图书和阅读器）</li>
+                <li>添加联系信息（电子邮件、网站、电话）</li>
+            </ol>
+
+            <h3>3. 内容分级</h3>
+            <ol>
+                <li>在左侧菜单中找到<code>内容分级</code></li>
+                <li>完成分级问卷</li>
+                <li>根据应用内容，翻天印应用可能会被评为<code>3+</code>或<code>全年龄段</code></li>
+            </ol>
+
+            <h3>4. 设置价格和发行</h3>
+            <ol>
+                <li>在左侧菜单中找到<code>价格和发行</code></li>
+                <li>选择应用发布的国家/地区（建议选择中国和其他主要市场）</li>
+                <li>如果是免费应用，确认应用将保持免费</li>
+            </ol>
+
+            <h3>5. 应用内购买（如适用）</h3>
+            <p>如果应用提供付费功能：</p>
+            <ol>
+                <li>在左侧菜单中找到<code>应用内购买</code></li>
+                <li>点击<code>创建应用内购买项</code></li>
+                <li>选择购买类型（一次性产品、订阅等）</li>
+                <li>设置价格和说明</li>
+            </ol>
+
+            <h3>6. 应用发布</h3>
+            <ol>
+                <li>在左侧菜单中找到<code>应用发布</code></li>
+                <li>选择发布轨道（生产轨道、开放测试、封闭测试等）
+                    <ul>
+                        <li>建议先使用<code>封闭测试</code>或<code>开放测试</code>进行测试</li>
+                    </ul>
+                </li>
+                <li>创建新版本</li>
+                <li>上传APK或App Bundle文件</li>
+                <li>填写版本说明</li>
+                <li>完成发布前的审核清单</li>
+                <li>点击<code>审核发布</code></li>
+            </ol>
+
+            <h2>审核和发布</h2>
+            <ol>
+                <li>Google Play审核通常需要1-3个工作日</li>
+                <li>审核期间，可以在Google Play Console中查看审核状态</li>
+                <li>如果审核被拒，会收到拒绝原因，修复后可以重新提交</li>
+                <li>审核通过后，应用将在几小时内在Google Play商店上线</li>
+            </ol>
+
+            <h2>常见问题和解决方案</h2>
+
+            <h3>审核被拒常见原因</h3>
+            <ol>
+                <li><strong>隐私政策问题</strong>：确保隐私政策URL有效且内容符合要求</li>
+                <li><strong>应用崩溃</strong>：确保应用在各种设备上稳定运行</li>
+                <li><strong>内容问题</strong>：确保应用内容符合Google Play政策</li>
+                <li><strong>元数据不符</strong>：应用描述与实际功能不符</li>
+                <li><strong>知识产权问题</strong>：使用未经授权的品牌名称或内容</li>
+            </ol>
+
+            <h3>解决方案</h3>
+            <ol>
+                <li>仔细阅读拒绝原因</li>
+                <li>根据反馈修复问题</li>
+                <li>在重新提交前全面测试</li>
+                <li>如有疑问，可以联系Google Play支持</li>
+            </ol>
+
+            <h2>发布后维护</h2>
+            <ol>
+                <li>定期检查应用性能和用户反馈</li>
+                <li>及时回复用户评论</li>
+                <li>根据用户反馈和市场需求更新应用</li>
+                <li>监控应用崩溃报告和ANR（应用无响应）情况</li>
+                <li>定期发布更新以修复bug和添加新功能</li>
+            </ol>
+
+            <h2>重要链接</h2>
+            <ul>
+                <li><a href="https://play.google.com/console" target="_blank">Google Play Console</a></li>
+                <li><a href="https://play.google.com/about/developer-content-policy/" target="_blank">Google Play开发者政策中心</a></li>
+                <li><a href="https://developer.android.com/quality" target="_blank">应用质量指南</a></li>
+                <li><a href="https://developer.android.com/distribute/best-practices/launch/launch-checklist" target="_blank">发布检查清单</a></li>
+            </ul>
+
+            <h2>注意事项</h2>
+            <ol>
+                <li>保持密钥库文件安全，丢失将导致无法更新应用</li>
+                <li>版本号（versionCode）每次更新必须递增</li>
+                <li>应用一旦发布为付费应用，不能更改为免费应用</li>
+                <li>应用名称、包名和应用签名在发布后不能更改</li>
+                <li>中国大陆用户可能无法直接访问Google Play，考虑同时在国内应用商店发布</li>
+            </ol>
+
+            <div class="note-box">
+                <h3>提示</h3>
+                <p>如果您计划同时在中国国内应用商店发布，请参考我们的<a href="china-publish.html">中国应用商店上架指南</a>。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="guide.html">使用指南</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                    <li><a href="privacy-policy.html">隐私政策</a></li>
+                    <li><a href="android-publish.html">安卓上架</a></li>
+                </ul>
+            </div>
+            <p class="copyright">&copy; 2025 翻天印有声书. 保留所有权利。</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
