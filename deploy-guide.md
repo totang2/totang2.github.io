@@ -20,7 +20,7 @@
 ### 2. 克隆仓库到本地
 
 ```bash
-git clone https://github.com/你的用户名/fty-audio-book-support.git
+git clone https://github.com/totang2/fty-audio-book-support.git
 cd fty-audio-book-support
 ```
 
@@ -53,7 +53,7 @@ git push origin main
 部署通常需要几分钟时间。完成后，您将在页面顶部看到一个绿色的成功消息，其中包含您的网站 URL，通常是：
 
 ```
-https://你的用户名.github.io/fty-audio-book-support/
+https://totang2.github.io/fty-audio-book-support/
 ```
 
 ## 配置自定义域名（可选）
@@ -61,7 +61,7 @@ https://你的用户名.github.io/fty-audio-book-support/
 如果您想使用自定义域名，请按照以下步骤操作：
 
 1. 在您的域名注册商处添加 DNS 记录：
-   - 如果使用子域名（如 support.yourdomain.com），添加 CNAME 记录指向 `你的用户名.github.io`
+   - 如果使用子域名（如 support.yourdomain.com），添加 CNAME 记录指向 `totang2.github.io`
    - 如果使用顶级域名，添加 A 记录指向 GitHub Pages 的 IP 地址
 
 2. 编辑仓库中的 CNAME 文件，将其内容设置为您的域名：

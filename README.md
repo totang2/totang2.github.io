@@ -14,7 +14,7 @@
 
 1. 克隆仓库到本地：
    ```bash
-   git clone https://github.com/你的用户名/翻天印有声书-支持.git
+   git clone https://github.com/totang2/翻天印有声书-支持.git
    cd 翻天印有声书-支持
    ```
 
@@ -43,7 +43,7 @@
 
 如果需要使用自定义域名：
 
-1. 在DNS提供商处添加CNAME记录，指向`你的用户名.github.io`
+1. 在DNS提供商处添加CNAME记录，指向`totang2.github.io`
 2. 在仓库根目录创建名为`CNAME`的文件，内容为您的域名
 3. 在GitHub仓库设置中配置自定义域名
 
