@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 翻天印有声书应用支持</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>联系我们</h1>
+        <p><a href="index.html">返回首页</a></p>
+    </header>
+
+    <div class="container">
+        <h2>联系方式</h2>
+
+        <div class="contact-method">
+            <h3>📧 电子邮件</h3>
+            <p>技术支持：<a href="mailto:support@example.com">support@example.com</a></p>
+            <p>商务合作：<a href="mailto:business@example.com">business@example.com</a></p>
+            <p>我们会在1-2个工作日内回复您的邮件。</p>
+        </div>
+
+        <div class="contact-method">
+            <h3>💬 社交媒体</h3>
+            <p>微信公众号：翻天印有声书应用</p>
+            <p>微博：@翻天印有声书官方</p>
+        </div>
+
+        <div class="contact-method">
+            <h3>📱 应用内反馈</h3>
+            <p>您也可以直接在应用内的"设置 > 反馈"页面向我们提交问题和建议。</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>问题反馈</h2>
+        <p>如果您在使用过程中遇到问题，请填写以下表单，我们会尽快为您解决。</p>
+
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">您的姓名</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">电子邮箱</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="device">设备型号</label>
+                <input type="text" id="device" name="device" placeholder="例如：iPhone 13, Samsung Galaxy S21">
+            </div>
+
+            <div class="form-group">
+                <label for="appVersion">应用版本</label>
+                <input type="text" id="appVersion" name="appVersion" placeholder="例如：1.2.3">
+            </div>
+
+            <div class="form-group">
+                <label for="issueType">问题类型</label>
+                <select id="issueType" name="issueType">
+                    <option value="bug">应用崩溃/错误</option>
+                    <option value="feature">功能建议</option>
+                    <option value="account">账户问题</option>
+                    <option value="payment">支付/订阅问题</option>
+                    <option value="other">其他</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">问题描述</label>
+                <textarea id="message" name="message" required placeholder="请详细描述您遇到的问题或建议，包括操作步骤和现象"></textarea>
+            </div>
+
+            <button type="submit">提交反馈</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>常见问题</h2>
+        <p>在联系我们之前，您可以查看<a href="faq.html">常见问题页面</a>，也许已经有您问题的解答。</p>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">返回首页</a>
+        <a href="faq.html">常见问题</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 翻天印有声书应用 版权所有</p>
+    </footer>
+
+    <script>
+        // 简单的表单提交处理
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('感谢您的反馈！我们会尽快处理您的问题。');
+            this.reset();
+        });
+    </script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

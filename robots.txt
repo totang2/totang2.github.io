@@ -1,0 +1,5 @@
+# 翻天印有声书应用支持网站 robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://你的用户名.github.io/fty-audio-book-support/sitemap.xml
