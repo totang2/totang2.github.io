@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载应用 - 翻天印有声书</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入QRCode.js库 -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>翻天印有声书</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="guide.html">使用指南</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                    <li><a href="download.html">下载应用</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <h2>下载应用</h2>
+            <p>扫描下方二维码或点击按钮，立即下载翻天印有声书应用，开启您的听书之旅！</p>
+            <div class="notice-box">
+                <p><strong>注意：</strong>应用市场暂时不可用，请使用直接下载APK安装包的方式安装应用。</p>
+            </div>
+            
+            <div class="download-section">
+                <div class="qrcode-container">
+                    <h3>iOS版本</h3>
+                    <div id="ios-qrcode" class="qrcode"></div>
+                    <p>iOS版本暂不可用</p>
+                    <p class="small-text">敬请期待</p>
+                </div>
+                
+                <div class="qrcode-container">
+                    <h3>Android版本</h3>
+                    <div id="android-qrcode" class="qrcode"></div>
+                    <p>扫码下载APK安装包</p>
+                    <a href="/images/fty-audiobook.apk" class="button" download>直接下载APK</a>
+                </div>
+            </div>
+            
+            <div class="app-features">
+                <h3>应用特点</h3>
+                <ul>
+                    <li>高质量文本转语音技术</li>
+                    <li>多种自然语音选择</li>
+                    <li>支持多种文档格式</li>
+                    <li>智能章节分割</li>
+                    <li>离线收听功能</li>
+                    <li>进度同步与书签</li>
+                </ul>
+            </div>
+            
+            <div class="system-requirements">
+                <h3>系统要求</h3>
+                <div class="requirements-grid">
+                    <div>
+                        <h4>iOS</h4>
+                        <p>iOS 12.0 或更高版本</p>
+                        <p>兼容 iPhone、iPad 和 iPod touch</p>
+                    </div>
+                    <div>
+                        <h4>Android</h4>
+                        <p>Android 8.0 或更高版本</p>
+                        <p>需要 100MB 以上的可用存储空间</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="guide.html">使用指南</a></li>
+                    <li><a href="faq.html">常见问题</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                    <li><a href="download.html">下载应用</a></li>
+                    <li><a href="privacy-policy.html">隐私政策</a></li>
+                </ul>
+            </div>
+            <p class="copyright">&copy; 2025 翻天印有声书. 保留所有权利。</p>
+        </div>
+    </footer>
+    
+    <script>
+        // 获取当前网站的基础URL
+        const baseUrl = window.location.protocol + '//' + window.location.host;
+        
+        // 生成iOS二维码（暂时不可用的提示）
+        new QRCode(document.getElementById("ios-qrcode"), {
+            text: "iOS版本暂不可用，敬请期待",
+            width: 180,
+            height: 180,
+            colorDark: "#6c757d", // 使用灰色表示不可用
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+        
+        // 生成Android二维码（指向APK下载链接）
+        new QRCode(document.getElementById("android-qrcode"), {
+            text: baseUrl + "/images/fty-audiobook.apk",
+            width: 180,
+            height: 180,
+            colorDark: "#4a6fa5",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    </script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
